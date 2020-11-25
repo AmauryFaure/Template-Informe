@@ -405,7 +405,7 @@
 %	#4	Propiedades de la imagen
 %	#5	Leyenda de la imagen (opcional)
 \newcommand{\insertimageleftp}[5][]{%
-	\xspace~\\%
+	\xspace ~ \\%
 	\vspace{-2\baselineskip}%
 	\par%
 	\insertimageleftboxedp[#1]{#2}{#3}{#4}{0}{#5}
@@ -507,7 +507,7 @@
 %	#4	Propiedades de la imagen
 %	#5	Leyenda de la imagen (opcional)
 \newcommand{\insertimagerightp}[5][]{%
-	\xspace~\\%
+	\xspace ~ \\%
 	\vspace{-2\baselineskip}%
 	\par%
 	\insertimagerightboxedp[#1]{#2}{#3}{#4}{0}{#5}
@@ -600,6 +600,13 @@
 	\end{wrapfigure}
 	\setcaptionmargincm{\captionlrmargin}
 	\resetindexcaption
+}
+
+% Inserta una imagen con parametros keyvals almacenados en una variable
+% 	#1	Parámetros (keyvals)
+%	#2	Dirección de la imagen
+\newcommand{\coreinsertkeyimage}[2]{%
+	\expandafter\includegraphics\expandafter[#1]{\expandafter#2}%
 }
 
 % Define la clave resolution al insertar imágenes
