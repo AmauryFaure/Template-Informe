@@ -44,3 +44,5 @@ dist/
 # Archivos temporales
 *_temp.tex
 TODO.txt
+main.fls
+main.fdb_latexmk
